@@ -18,7 +18,7 @@ class CreateCommentsTable extends Migration
             $table->timestamps();
 			$table->string('commentName');
 			$table->integer('commentAutorID');
-			$table->integer('commentRating')-default('0');
+			$table->integer('commentRating')->default('0');
 			$table->integer('blogID');
 			$table->mediumText('commentBody');
         });
